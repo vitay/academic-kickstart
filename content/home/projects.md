@@ -3,8 +3,8 @@
 widget = "projects"  # Do not modify this line!
 active = true  # Activate this widget? true/false
 
-title = "Projects"
-subtitle = ""
+title = "Research"
+subtitle = "A selection of research topics"
 
 # Order that this section will appear in.
 weight = 50
@@ -18,14 +18,14 @@ folder = "project"
 #   1 = List
 #   3 = Card
 #   5 = Showcase
-view = 3
+view = 5
 
 # Widget layout
 # Legend: 0 = two columns (default), 1 = single column
 widget_layout = 0
 
 # For Showcase view, flip alternate rows?
-flip_alt_rows = false
+flip_alt_rows = true
 
 # Filter toolbar.
 
@@ -49,4 +49,3 @@ filter_default = 0
 #   tag = "Demo"
 
 +++
-

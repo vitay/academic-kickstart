@@ -5,15 +5,15 @@
 # Each configuration section is defined by a name in square brackets (e.g. `[outputs]`).
 
 # Title of your site
-title = "Academic"
+title = "Julien Vitay"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = "https://julien-vitay.net/"
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = ""
+copyright = "&copy; 2018-now"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""
@@ -41,6 +41,11 @@ enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
+
+# Link custom CSS and JS assets
+#   (relative to /static/css and /static/js respectively)
+custom_css = ["override.css"]
+custom_js  = []
 
 [outputs]
   home = [ "HTML", "CSS", "RSS", "JSON" ]
