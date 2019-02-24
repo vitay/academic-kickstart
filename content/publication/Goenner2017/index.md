@@ -53,8 +53,7 @@ url_poster = ""
 url_source = ""
 
 # Custom links (optional).
-#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Full-text", url = "https://www.frontiersin.org/articles/10.3389/fncom.2017.00084/full"}]
+doi = "10.3389/fncom.2017.00084"
 
 # Does this page contain LaTeX math? (true/false)
 math = false
@@ -69,3 +68,5 @@ image = ""
 caption = ""
 
 +++
+
+{{< figure src="model.png" title="" >}}

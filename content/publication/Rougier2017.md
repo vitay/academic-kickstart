@@ -100,7 +100,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Full-text", url = "https://peerj.com/articles/cs-142/"}]
+doi = "10.7717/peerj-cs.142"
 
 # Does this page contain LaTeX math? (true/false)
 math = false

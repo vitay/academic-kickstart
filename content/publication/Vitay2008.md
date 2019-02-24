@@ -54,7 +54,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Full-text", url = "https://www.mitpressjournals.org/doi/10.1162/jocn.2008.20147"}]
+doi = "10.1162/jocn.2008.20147"
 
 # Does this page contain LaTeX math? (true/false)
 math = false
