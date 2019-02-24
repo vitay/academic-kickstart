@@ -17,6 +17,7 @@ image = ""
 caption = ""
 +++
 
+
 ### Machine Learning
 
 The course covers various fields of machine learning, including supervised learning, unsupervised learning and reinforcement learning. See the course's page : [http://www.tu-chemnitz.de/informatik/KI/edu/ml](http://www.tu-chemnitz.de/informatik/KI/edu/ml)
@@ -32,7 +33,7 @@ The course covers various fields of machine learning, including supervised learn
     7.   Recurrent neural networks
 
 2.  **Reinforcement Learning**
- 
+
     1.   Formal definition of the RL problem
     2.   Dynamic Programming, Monte-Carlo, Temporal Difference
     3.   Eligibility Traces, Function approximation
