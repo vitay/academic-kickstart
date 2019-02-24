@@ -92,4 +92,4 @@ I am researcher and lecturer at the [TU Chemnitz](http://www.tu-chemnitz.de/), i
 
 I was previously postdoc in the [Psychology Department](http://www.uni-muenster.de/Psychologie/) of the University of Münster (Germany), under the supervision of Prof. Dr. Fred Hamker and a PhD student at [Inria](http://www.inria.fr/) Nancy (France), in the Cortex lab headed by Dr. Frédéric Alexandre.
 
-My research interests focus on **computational neuroscience** (basal ganglia, hippocampus, dopaminergic system) and **neuro-informatics** (neuro-simulator ANNarchy). I am also interested in machine learning, especially the recent advances in **deep reinforcement learning** and its application to **robotics**.
+My research interests focus on **computational neuroscience** (basal ganglia, hippocampus, dopaminergic system) and **neuro-informatics** (neuro-simulator ANNarchy). I am also interested in machine learning, especially the recent advances in **deep reinforcement learning**.
