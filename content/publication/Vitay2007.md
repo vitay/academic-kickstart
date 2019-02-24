@@ -22,7 +22,7 @@ publication = "Attention in Cognitive Systems, L. Paletta and E. Rome (Eds), Spr
 publication_short = ""
 
 # Abstract and optional shortened version.
-abstract = ""
+abstract = "Although dopamine is one of the most studied neurotransmitter in the brain, its exact function is still unclear. This short review focuses on its role in different levels of cognitive vision: visual processing, visual attention and working memory. Dopamine can influence cognitive vision either through direct modulation of visual cells or through gating of basal ganglia functioning. Even if its classically assigned role is to signal reward prediction error, we review evidence that dopamine is also involved in novelty detection and attention shifting and discuss the possible implications for computational modeling."
 abstract_short = ""
 
 # Featured image thumbnail (optional)

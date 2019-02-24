@@ -22,7 +22,7 @@ publication = "In Biomimetic Neural Learning for Intelligent Robotics, S. Wermte
 publication_short = ""
 
 # Abstract and optional shortened version.
-abstract = ""
+abstract = "Although biomimetic autonomous robotics relies on the massively parallel architecture of the brain, the key issue is to temporally organize behaviour. The distributed representation of the sensory information has to be coherently processed to generate relevant actions. In the visual domain, we propose here a model of visual exploration of a scene by the means of localized computations in neural populations whose architecture allows the emergence of a coherent behaviour of sequential scanning of salient stimuli. It has been implemented on a real robotic platform exploring a moving and noisy scene including several identical targets."
 abstract_short = ""
 
 # Featured image thumbnail (optional)

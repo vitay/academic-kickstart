@@ -1,11 +1,11 @@
 +++
-title = "Dopamine"
+title = "Dopaminergic system"
 date = 2019
 draft = false
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ['computational neuroscience']
+tags = ['computational-neuroscience']
 
 # Project summary to display on homepage.
 summary = "Modeling the dopaminergic system (VTA, SNc), its afferences and its influence on the basal ganglia, prefrontal cortex and hippocampus."
@@ -50,7 +50,7 @@ A striking feature of VTA cells is their response during classical (or Pavlovian
 
 What remains unclear is how VTA cells access information about the US, the CS and more importantly the time elapsed since CS onset. The goal of this research project is to investigate the mechanisms by which VTA is able to exhibit these properties, by looking at the afferent system to VTA. VTa indeed receives information from many brain areas, either directly as the rostromedial tegmental area (RMTg), the pedunculopontine nucleus (PPTN) or the nucleus accumbens (NAcc), or indirectly as the amygdala, the lateral habenula (LHb), the ventral pallidum (VP) or the ventromedial prefrontal cortex (vmPFC).
 
-<img style="width:50%; min-width:320px" src="/img/dopamine/dopamine.jpg" />
+<img style="width:80%; min-width:320px" src="/img/dopamine/dopamine.jpg" />
 
 
 ### Publications
