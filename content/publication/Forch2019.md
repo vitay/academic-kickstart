@@ -42,7 +42,7 @@ projects = ["deeplearning"]
 tags = []
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "pdf/Forch2019.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""

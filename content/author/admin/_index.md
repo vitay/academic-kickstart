@@ -45,7 +45,7 @@ user_groups = ["Researchers"]
   year = 2006
 
 [[education.courses]]
-  course = "Engineering school"
+  course = "Engineering degree"
   institution = "Ecole Supérieure d'Electricité (Supélec)"
   year = 2002
 

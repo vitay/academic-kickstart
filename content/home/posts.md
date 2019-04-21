@@ -2,9 +2,10 @@
 # A Recent Blog Posts section created with the Pages widget.
 # This section displays recent blog posts from `content/post/`.
 
-widget = "pages"  # Do not modify this line!
+widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 40  # Order that this section will appear.
+weight = 60  # Order that this section will appear.
 
 title = "Recent Posts"
 subtitle = ""
@@ -55,12 +56,12 @@ subtitle = ""
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  text_color_light = false  
+  # text_color_light = true  
   
 [advanced]
  # Custom CSS. 
  css_style = ""
  
  # CSS class.
- css_class = ""  
+ css_class = ""
 +++

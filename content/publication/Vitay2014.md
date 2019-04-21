@@ -44,7 +44,7 @@ tags = []
 # Links (optional).
 url_pdf = "pdf/Vitay2014.pdf"
 url_preprint = ""
-url_code = ""
+url_code = "https://github.com/vitay/bg-timing"
 url_dataset = ""
 url_project = ""
 url_slides = ""

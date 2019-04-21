@@ -44,7 +44,7 @@ tags = []
 # Links (optional).
 url_pdf = "pdf/Vitay2015.pdf"
 url_preprint = ""
-url_code = ""
+url_code = "https://bitbucket.org/annarchy/annarchy"
 url_dataset = ""
 url_project = ""
 url_slides = ""
