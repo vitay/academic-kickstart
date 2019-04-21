@@ -50,7 +50,7 @@ time_format = "15:04"
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "julien.vitay@informatik-tu-chemnitz.de"
+email = "julien.vitay@informatik.tu-chemnitz.de"
 phone = "(+49) 371 531 39468"
 address = """
 TU Chemnitz<br>
