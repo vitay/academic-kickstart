@@ -640,3 +640,27 @@ STDP = Synapse(
         w = clip(w + x, w_min , w_max)
     """)
 ```
+
+---
+
+## And much more...
+
+* Standard populations (`SpikeSourceArray`, `TimedArray`, `PoissonPopulation`, `HomogeneousCorrelatedSpikeTrains`), OpenCV bindings.
+
+* Standard neurons:
+
+    * LeakyIntegrator, Izhikevich, IF_curr_exp, IF_cond_exp, IF_curr_alpha, IF_cond_alpha, HH_cond_exp, EIF_cond_exp_isfa_ista, EIF_cond_alpha_isfa_ista
+
+* Standard synapses:
+
+    * Hebb, Oja, IBCM, STP, STDP
+
+* Parallel simulations with `parallel_run`.
+
+* Convolutional and pooling layers.
+
+* Hybrid rate-coded / spiking networks.
+
+* Structural plasticity.
+
+RTFD: <https://annarchy.readthedocs.io>
