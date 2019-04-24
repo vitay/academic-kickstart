@@ -5,7 +5,7 @@ draft = false
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ['parallel computing']
+tags = ['parallel computing', 'computational neuroscience']
 
 # Project summary to display on homepage.
 summary = "ANNarchy (Artificial Neural Networks architect) is a general-purpose parallel neuro-simulator for rate-coded or spiking neural networks."
@@ -16,15 +16,15 @@ summary = "ANNarchy (Artificial Neural Networks architect) is a general-purpose 
 #   E.g. `slides = "example-slides"` references
 #   `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides = ""
+slides = "annarchy"
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""
 
 # Links (optional).
 url_pdf = ""
-url_code = ""
-url_dataset = ""
+url_code = "https://bitbucket.org/annarchy/annarchy"
+url_dataset = "https://github.com/vitay/ANNarchy-notebooks"
 url_slides = ""
 url_video = ""
 url_poster = ""
@@ -46,12 +46,12 @@ url_poster = ""
 
 Neuro-computational models are different from classical neural networks (deep learning) in many aspects:
 
-* The complexity of the neurons, whose activity is governed by one or several differential equations instead of a smiple weighted sum.
+* The complexity of the neurons, whose activity is governed by one or several differential equations instead of a simple weighted sum.
 * The complexity and diversity of the learning rules (synaptic plasticity), compared to gradient descent.
 * The size of the networks needed to simulate significant parts of the brain.
 * The huge diversity of models, architectures, frameworks used by researchers in computational neuroscience.
 
-The increasing size of such networks asks for efficient parallel simulations, using distributed systems (OpenMP, MPI) or GPUs (CUDA). However, computational neuroscientists cannot be expected to be also experts in parallel computing. There is a need for a general-purpose neuro-simulator, with an easy but flexible interafce allowing to define a huge variety of models, but which is internally efficient and allows for fast parallel simulations on various hardwares.
+The increasing size of such networks asks for efficient parallel simulations, using distributed systems (OpenMP, MPI) or GPUs (CUDA). However, computational neuroscientists cannot be expected to be also experts in parallel computing. There is a need for a general-purpose neuro-simulator, with an easy but flexible interface allowing to define a huge variety of models, but which is internally efficient and allows for fast parallel simulations on various hardwares.
 
 Over many years, we have developed **ANNarchy** (Artificial Neural Networks architect), a parallel simulator for distributed rate-coded or spiking neural networks. The definition of the models is made in Python, but the library generates optimized C++ code to actually run the simulation on parallel hardware, using either openMP or CUDA. The current stable version is 4.6 and is released under the GNU GPL v2 or later.
 
@@ -67,7 +67,7 @@ The documentation is available at:
 
 ANNarchy separates the description of a neural network from its simulation. The description is declared in a Python script, offering high flexibility and readability of the code, and allowing to use the huge ecosystem of scientific libraries available with Python (Numpy, Scipy, Matplotlib...). Using Python furthermore reduces the programming effort to a minimum, letting the modeller concentrate on network design and data analysis.
 
-<img style="width:60%; min-width:320px" src="/img/annarchy/neuralnetwork.png" />
+<img style="width:60%; min-width:320px" src="annarchy.svg" />
 
 A neural network is defined as a collection of interconnected populations of neurons. Each population comprises a set of similar artificial neurons (rate-coded or spiking point-neurons), whose activity is ruled by one or many ordinary differential equations. The activity of a neuron depends on the activity of other neurons through synapses, whose strength can evolve with time depending on pre- or post-synaptic activities (synaptic plasticity). Populations are interconnected with each other through projections, which contain synapses between two populations.
 
@@ -121,7 +121,7 @@ t, n = M.raster_plot(spikes)
 fr = M.histogram(spikes)
 
 # Plot the results
-import matplotlib.pyplot as plt480px
+import matplotlib.pyplot as plt
 ax = plt.subplot(3,1,1)
 ax.plot(t, n, 'b.', markersize=1.0)
 ax = plt.subplot(3,1,2)
