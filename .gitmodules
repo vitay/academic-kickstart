@@ -3,4 +3,4 @@
 	url = https://github.com/gcushen/hugo-academic.git
 [submodule "static/deeprl"]
 	path = static/deeprl
-	url = git@github.com:vitay/DeepRL.git
+	url = https://github.com/vitay/DeepRL.git
