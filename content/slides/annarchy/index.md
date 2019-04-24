@@ -124,6 +124,7 @@ ESN rate-coded neurons typically follow first-order ODEs:
 $$
     \tau \frac{dx(t)}{dt} + x(t) = \sum w^\text{in} \, r^\text{in}(t) + g \, \sum w^\text{rec} \, r(t) + \xi(t)
 $$
+
 $$
     r(t) = \tanh(x(t))
 $$
