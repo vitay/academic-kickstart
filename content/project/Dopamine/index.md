@@ -23,7 +23,7 @@ external_link = ""
 
 # Links (optional).
 url_pdf = ""
-url_code = ""
+url_code = "https://github.com/vitay/bg-timing"
 url_dataset = ""
 url_slides = ""
 url_video = ""

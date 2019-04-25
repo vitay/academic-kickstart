@@ -18,3 +18,11 @@ hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 echo -e "\033[0;32mPush local changes to GitHub...\033[0m"
 git commit -a -m "$msg"
 git push origin master
+
+# Push website to Github pages
+echo -e "\033[0;32mPush website to GitHub Pages...\033[0m"
+cd public
+git add *
+git commit -a -m "$msg"
+git push origin master
+cd ..
