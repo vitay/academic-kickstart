@@ -640,6 +640,14 @@ STDP = Synapse(
         w = clip(w + x, w_min , w_max)
     """)
 ```
+---
+
+
+## Spiking synapses : Example of Spike-Timing Dependent plasticity (STDP)
+
+<img style="width:70%; min-width:320px" src="img/stdp.png" />
+
+
 
 ---
 
