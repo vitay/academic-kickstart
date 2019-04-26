@@ -18,19 +18,19 @@ highlight_style = "github"
 ## ANNarchy (Artificial Neural Networks architect)
 
 
-* Source code:
+Source code:
 
 <https://bitbucket.org/annarchy/annarchy>
 
-* Documentation:
+Documentation:
 
 <https://annarchy.readthedocs.io/en/stable/>
 
-* Forum:
+Forum:
 
 <https://groups.google.com/forum/#!forum/annarchy>
 
-* Notebooks used in this tutorial:
+Notebooks used in this tutorial:
 
 <https://github.com/vitay/ANNarchy-notebooks>
 
@@ -40,13 +40,13 @@ highlight_style = "github"
 
 Installation guide: <https://annarchy.readthedocs.io/en/stable/intro/Installation.html>
 
-* From pip:
+From pip:
 
 ```bash
 pip install ANNarchy
 ```
 
-* From source:
+From source:
 
 ```bash
 git clone https://bitbucket.org/annarchy/annarchy.git
@@ -54,9 +54,9 @@ cd annarchy
 python setup.py install
 ```
 
-* Requirements (Linux and MacOS):
+Requirements (Linux and MacOS):
 
-    * g++/clang++, python 2.7 or 3.5+, numpy, scipy, matplotlib, sympy, cython
+* g++/clang++, python 2.7 or 3.5+, numpy, scipy, matplotlib, sympy, cython
 
 
 ---
@@ -158,11 +158,11 @@ ESN_Neuron = Neuron(
     """
 ```
 
-* All parameters used in the equations must be declared in the **Neuron** definition.
+All parameters used in the equations must be declared in the **Neuron** definition.
 
-* Parameters can have one value per neuron in the population (default) or be common to all neurons (flag `population` or `projection`).
+Parameters can have one value per neuron in the population (default) or be common to all neurons (flag `population` or `projection`).
 
-* Parameters and variables are double floats by default, but the type can be specified (`int`, `bool`).
+Parameters and variables are double floats by default, but the type can be specified (`int`, `bool`).
 
 ---
 
@@ -176,29 +176,29 @@ ESN_Neuron = Neuron(
     """
 ```
 
-* Variables are evaluated at each time step *in the order of their declaration*, except for coupled ODEs.
+Variables are evaluated at each time step *in the order of their declaration*, except for coupled ODEs.
 
-* Variables can be updated with assignments (`=`, `+=`, etc) or by defining first order ODEs.
+Variables can be updated with assignments (`=`, `+=`, etc) or by defining first order ODEs.
 
-* The math C library symbols can be used (`tanh`, `cos`, `exp`, etc).
+The math C library symbols can be used (`tanh`, `cos`, `exp`, etc).
 
-* Initial values at $t=0$ can be specified with `init` (default: 0.0).
+Initial values at $t=0$ can be specified with `init` (default: 0.0).
 
-* Lower/higher bounds on the values of the variables can be set with the `min`/`max` flags:
+Lower/higher bounds on the values of the variables can be set with the `min`/`max` flags:
 
 ```
 r = x : min=0.0 # ReLU
 ```
 
-* Additive noise can be drawn from several distributions, including `Uniform`, `Normal`, `LogNormal`, `Exponential`, `Gamma`...
+Additive noise can be drawn from several distributions, including `Uniform`, `Normal`, `LogNormal`, `Exponential`, `Gamma`...
 
-* The output variable of a rate-coded neuron **must** be `r`.
+The output variable of a rate-coded neuron **must** be `r`.
 
 ---
 
 ## ODEs
 
-* First-order ODEs are parsed and manipulated using `sympy`:
+First-order ODEs are parsed and manipulated using `sympy`:
 
 ```python
     # All equivalent:
@@ -207,23 +207,23 @@ r = x : min=0.0 # ReLU
     dx/dt = (-x)/tau
 ```
 
-* Several numerical methods are available (<https://annarchy.readthedocs.io/en/stable/manual/NumericalMethods.html>):
+Several numerical methods are available (<https://annarchy.readthedocs.io/en/stable/manual/NumericalMethods.html>):
 
-    * Explicit (forward) Euler (default): `tau * dx/dt + x = 0.0 : init=0.0, explicit`
+* Explicit (forward) Euler (default): `tau * dx/dt + x = 0.0 : init=0.0, explicit`
 
-    * Implicit (backward) Euler: `tau * dx/dt + x = 0.0 : init=0.0, implicit`
+* Implicit (backward) Euler: `tau * dx/dt + x = 0.0 : init=0.0, implicit`
 
-    * Exponential Euler (exact for linear ODE): `tau * dx/dt + x = 0.0 : init=0.0, exponential`
+* Exponential Euler (exact for linear ODE): `tau * dx/dt + x = 0.0 : init=0.0, exponential`
 
-    * Midpoint (RK2): `tau * dx/dt + x = 0.0 : init=0.0, midpoint`
+* Midpoint (RK2): `tau * dx/dt + x = 0.0 : init=0.0, midpoint`
 
-    * Event-driven (spiking synapses): `tau * dx/dt + x = 0.0 : init=0.0, event-driven`
+* Event-driven (spiking synapses): `tau * dx/dt + x = 0.0 : init=0.0, event-driven`
 
 ---
 
 ## Coupled ODEs
 
-* ODEs are solved concurrently, instead of sequentially for assignments:
+ODEs are solved concurrently, instead of sequentially for assignments:
 
 ```python
 # I is updated
@@ -237,40 +237,40 @@ tau * du/dt + u = v
 r = tanh(v)
 ```
 
-* The order of the equations therefore matters a lot.
+The order of the equations therefore matters a lot.
 
-* A single variable can only be updated once in the `equations` field.
+A single variable can only be updated once in the `equations` field.
 
 ---
 
 ## Populations
 
-* Populations are creating by specifying a number of neurons and a neuron type:
+Populations are creating by specifying a number of neurons and a neuron type:
 
 ```python
 pop = Population(1000, ESN_Neuron)
 ```
 
-* For visualization purposes or when using convolutional layers, a tuple geometry can be passed instead of the size:
+For visualization purposes or when using convolutional layers, a tuple geometry can be passed instead of the size:
 
 ```python
 pop = Population((100, 100), ESN_Neuron)
 ```
 
-* All parameters and variables become attributes of the population (read and write) as numpy arrays:
+All parameters and variables become attributes of the population (read and write) as numpy arrays:
 
 ```python
 pop.tau = np.linspace(20.0, 40.0, 1000)
 pop.r = np.tanh(pop.v)
 ```
 
-* Single neurons can be individually modified, if the `population` flag was not set:
+Single neurons can be individually modified, if the `population` flag was not set:
 
 ```python
 pop[10].r = 1.0
 ```
 
-* Slices of populations are called `PopulationView` and can be addressed separately:
+Slices of populations are called `PopulationView` and can be addressed separately:
 
 ```python
 pop = Population(1000, ESN_Neuron)
@@ -282,16 +282,16 @@ I = pop[800:]
 
 ## Projections
 
-* Projections link two populations (or views) in a uni-directional way.
+Projections link two populations (or views) in a uni-directional way.
 
 ```python
 proj_exc = Projection(E, pop, 'exc')
 proj_inh = Projection(I, pop, 'inh')
 ```
 
-* Each target (`'exc', 'inh', 'AMPA', 'NMDA', 'GABA'`) can be defined as needed and will be treated differently by the post-synaptic neurons.
+Each target (`'exc', 'inh', 'AMPA', 'NMDA', 'GABA'`) can be defined as needed and will be treated differently by the post-synaptic neurons.
 
-* The weighted sum of inputs for a specific target is accessed in the equations by `sum(target)`:
+The weighted sum of inputs for a specific target is accessed in the equations by `sum(target)`:
 
 ```python
     equations="""
@@ -301,15 +301,15 @@ proj_inh = Projection(I, pop, 'inh')
     """
 ```
 
-* It is therefore possible to model modulatory effects, divisive inhibition, etc.
+It is therefore possible to model modulatory effects, divisive inhibition, etc.
 
 ---
 
 ## Connection methods
 
-* Projections must be populated with a connectivity matrix (who is connected to who), a weight `w` and optionally a delay `d` (uniform or variable).
+Projections must be populated with a connectivity matrix (who is connected to who), a weight `w` and optionally a delay `d` (uniform or variable).
 
-* Several patterns are predefined:
+Several patterns are predefined:
 
 ```python
 proj.connect_all_to_all(weights=Normal(0.0, 1.0), delays=2.0, allow_self_connections=False)
@@ -321,7 +321,7 @@ proj.connect_gaussian(amp=1.0, sigma=0.2, limit=0.001)
 proj.connect_dog(amp_pos=1.0, sigma_pos=0.2, amp_neg=0.3, sigma_neg=0.7, limit=0.001)
 ```
 
-* But you can also load Numpy arrays or Scipy sparse matrices. Example for synfire chains:
+But you can also load Numpy arrays or Scipy sparse matrices. Example for synfire chains:
 
 ```python
 w = np.array([[None]*pre.size]*post.size)
@@ -339,21 +339,21 @@ proj.connect_from_sparse(w)
 
 ## Compiling and running the simulation
 
-* Once all populations and projections are created, you have to generate to the C++ code and compile it:
+Once all populations and projections are created, you have to generate to the C++ code and compile it:
 
 ```python
 compile()
 ```
 
-* You can now manipulate all parameters/variables from Python thanks to the Cython bindings.
+You can now manipulate all parameters/variables from Python thanks to the Cython bindings.
 
-* A simulation is simply run for a fixed duration with:
+A simulation is simply run for a fixed duration with:
 
 ```python
 simulate(1000.) # 1 second
 ```
 
-* You can also run a simulation until a criteria is filled, check:
+You can also run a simulation until a criteria is filled, check:
 
 <https://annarchy.readthedocs.io/en/stable/manual/Simulation.html#early-stopping>
 
@@ -361,16 +361,16 @@ simulate(1000.) # 1 second
 
 ## Monitoring
 
-* By default, a simulation is run in C++ without interaction with Python.
+By default, a simulation is run in C++ without interaction with Python.
 
-* You may want to record some variables (neural or synaptic) during the simulation with a `Monitor`:
+You may want to record some variables (neural or synaptic) during the simulation with a `Monitor`:
 
 ```python
 m = Monitor(pop, ['v', 'r'])
 n = Monitor(proj, ['w'])
 ```
 
-* After the simulation, you can retrieve the recordings with:
+After the simulation, you can retrieve the recordings with:
 
 ```python
 recorded_v = m.get('v')
@@ -378,15 +378,15 @@ recorded_r = m.get('r')
 recorded_w = n.get('w')
 ```
 
-* Warning: calling `get()` flushes the array.
+Warning: calling `get()` flushes the array.
 
-* Warning: recording projections can quickly fill up the RAM (see Dendrites).
+Warning: recording projections can quickly fill up the RAM (see Dendrites).
 
 ---
 
 # Example 1: Echo-State Network
 
-* Link to the Jupyter notebook on github: [RC.ipynb](https://github.com/vitay/ANNarchy-notebooks/blob/master/notebooks/RC.ipynb)
+Link to the Jupyter notebook on github: [RC.ipynb](https://github.com/vitay/ANNarchy-notebooks/blob/master/notebooks/RC.ipynb)
 
 <img style="width:80%; min-width:320px" src="img/rc.jpg" />
 
@@ -399,15 +399,15 @@ recorded_w = n.get('w')
 
 ## Spiking neurons
 
-* Spiking neurons must also define two additional fields:
+Spiking neurons must also define two additional fields:
 
-    * `spike`: condition for emitting a spike.
+* `spike`: condition for emitting a spike.
 
-    * `reset`: what happens after a spike is emitted (at the start of the refractory period).
+* `reset`: what happens after a spike is emitted (at the start of the refractory period).
 
-* A refractory period in ms can also be specified.
+A refractory period in ms can also be specified.
 
-* Example of the Leaky Integrate-and-Fire:
+Example of the Leaky Integrate-and-Fire:
 
 ```python
 LIF = Neuron(
@@ -431,7 +431,7 @@ LIF = Neuron(
 
 ## Conductances / currents
 
-* A pre-synaptic spike arriving to a spiking neuron increase the conductance `g_target` (e.g. `g_exc` or `g_inh`, depending on the projection).
+A pre-synaptic spike arriving to a spiking neuron increase the conductance `g_target` (e.g. `g_exc` or `g_inh`, depending on the projection).
 
 ```python
 LIF = Neuron(
@@ -445,21 +445,21 @@ LIF = Neuron(
 )
 ```
 
-* Each spike increments `g_target` from the synaptic efficiency `w` of the corresponding synapse.
+Each spike increments `g_target` from the synaptic efficiency `w` of the corresponding synapse.
 
 ```
 g_target += w
 ```
 
-* This defines an instantaneous model of synaptic transmission.
+This defines an instantaneous model of synaptic transmission.
 
 ---
 
 ## Conductances / currents
 
-* For **exponentially-decreasing** or **alpha-shaped** synapses, ODEs have to be introduced for the conductance/current.
+For **exponentially-decreasing** or **alpha-shaped** synapses, ODEs have to be introduced for the conductance/current.
 
-* The exponential numerical method should be preferred, as integration is exact.
+The exponential numerical method should be preferred, as integration is exact.
 
 ```python
 LIF = Neuron(
@@ -490,7 +490,7 @@ LIF = Neuron(
 
 ## Example 2: AdEx - Adaptive exponential neuron
 
-* Link to the Jupyter notebook on github: [AdEx.ipynb](https://github.com/vitay/ANNarchy-notebooks/blob/master/notebooks/AdEx.ipynb)
+Link to the Jupyter notebook on github: [AdEx.ipynb](https://github.com/vitay/ANNarchy-notebooks/blob/master/notebooks/AdEx.ipynb)
 
 $$
     \tau \, \frac{dv}{dt} = (E_L - v) + \delta_T \, \exp \frac{v-v_T}{\delta_T} + I - w
@@ -528,12 +528,12 @@ AdEx = Neuron(
 
 ## Rate-coded synapses : Intrator & Cooper BCM learning rule
 
-* Synapses can also implement equations that will be evaluated after each neural update.
+Synapses can also implement equations that will be evaluated after each neural update.
 
 ```python
 IBCM = Synapse(
     parameters = """
-        eta = 0.01 : projectionAdEx
+        eta = 0.01 : projection
         tau = 2000.0 : projection
     """,
     equations = """
@@ -545,25 +545,25 @@ IBCM = Synapse(
 )
 ```
 
-* The synaptic efficiency (weight) must be `w`.
+The synaptic efficiency (weight) must be `w`.
 
-* Each synapse can access pre- and post-synaptic variables with `pre.` and `post.`.
+Each synapse can access pre- and post-synaptic variables with `pre.` and `post.`.
 
-* The `postsynaptic` flag allows to do computations only once per post-synaptic neurons.
+The `postsynaptic` flag allows to do computations only once per post-synaptic neurons.
 
-* `psp` optionally defines what will be summed by the post-synaptic neuron (e.g. `psp = "w * log(pre.r)"`).
+`psp` optionally defines what will be summed by the post-synaptic neuron (e.g. `psp = "w * log(pre.r)"`).
 
 ---
 
 ## Plastic projections
 
-* The synapse type just has to be passed to the Projection:
+The synapse type just has to be passed to the Projection:
 
 ```python
 proj = Projection(inp, pop, 'exc', IBCM)
 ```
 
-* Synaptic variables can be accessed as lists of lists for the whole projection:
+Synaptic variables can be accessed as lists of lists for the whole projection:
 
 ```python
 proj.w
@@ -580,7 +580,7 @@ proj[10].w
 
 ## Example 3: Miconi's reward modulated RC network
 
-* Link to the Jupyter notebook on github: [Miconi.ipynb](https://github.com/vitay/ANNarchy-notebooks/blob/master/notebooks/Miconi.ipynb)
+Link to the Jupyter notebook on github: [Miconi.ipynb](https://github.com/vitay/ANNarchy-notebooks/blob/master/notebooks/Miconi.ipynb)
 
 <img style="width:70%; min-width:320px" src="img/miconi.png" />
 
@@ -588,11 +588,11 @@ proj[10].w
 
 ## Spiking synapses : Example of Short-term plasticity (STP)
 
-* Spiking synapses can define a `pre_spike` field, defining what happens when a pre-synaptic spike arrives at the synapse.
+Spiking synapses can define a `pre_spike` field, defining what happens when a pre-synaptic spike arrives at the synapse.
 
-* `g_target` is an alias for the corresponding post-synaptic conductance: it will be replaced by `g_exc` or `g_inh` depending on how the synapse is used.
+`g_target` is an alias for the corresponding post-synaptic conductance: it will be replaced by `g_exc` or `g_inh` depending on how the synapse is used.
 
-* By default, a pre-synaptic spike increments the post-synaptic conductance from `w`: `g_target += w`
+By default, a pre-synaptic spike increments the post-synaptic conductance from `w`: `g_target += w`
 
 ```python
 STP = Synapse(
@@ -617,7 +617,7 @@ STP = Synapse(
 
 ## Spiking synapses : Example of Spike-Timing Dependent plasticity (STDP)
 
-* `post_spike` similarly defines what happens when a post-synaptic spike is emitted.
+`post_spike` similarly defines what happens when a post-synaptic spike is emitted.
 
 ```python
 STDP = Synapse(
