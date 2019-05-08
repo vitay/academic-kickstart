@@ -16,7 +16,7 @@ location = "Chemnitz"
 
 # Name of event and optional event URL.
 event = "Chemnitzer Linux Tage 2019"
-event_url = "https://chemnitzer.linux-tage.de"
+event_url = "https://chemnitzer.linux-tage.de/2019/en/programm/beitrag/354"
 
 # Abstract. What's your talk about?
 abstract = "Artificial Intelligence (AI) has become extremely popular in the last years through the advancement of Deep Learning, a modernized version of the good old neural networks. Deep Learning has enabled huge progress in pattern recognition, for example in object recognition or localization, speech recognition and synthesis, natural language understanding or in robotic control. These advances and the many novel applications that they allow seem to promise a bright future to AI, some self-proclaimed prophets even affirming that AI could soon be comparable to or even exceed human intelligence (the singularity). This presentation will look at the current state-of-the-art in deep learning and its applications, observe some of its limitations and discuss whether this is a suitable approach to Artificial General Intelligence."
