@@ -50,11 +50,11 @@ There are two main families of **reinforcement learning** (RL; Sutton and Barto,
 * **Model-free** (MF) methods estimate the value of a state $V^\pi(s)$ or of a state-action pair $Q^\pi(s, a)$ by sampling trajectories and averaging the obtained returns (Monte-Carlo control), or by estimating the Bellman equations (Temporal difference - TD):
 
 <div>
-$$V^\pi(s_t) = \mathbb{E}_{\pi} [\sum_{k=0} \gamma^k \, r_{t+k+1}] = \mathbb{E}_{\pi} [r_{t+1} + \gamma \, V^\pi(s_{t+1})]$$
+$$V^\pi(s) = \mathbb{E}_{\pi} [\sum_{k=0} \gamma^k \, r_{t+k+1}  | s_t = s] = \mathbb{E}_{\pi} [r_{t+1} + \gamma \, V^\pi(s_{t+1})  | s_t = s]$$
 </div>
 
 <div>
-$$Q^\pi(s_t, a_t) = \mathbb{E}_{\pi} [\sum_{k=0} \gamma^k \, r_{t+k+1}] = \mathbb{E}_{\pi} [r_{t+1} + \gamma \, Q^\pi(s_{t+1}, a_{t+1})]$$
+$$Q^\pi(s, a) = \mathbb{E}_{\pi} [\sum_{k=0} \gamma^k \, r_{t+k+1}  | s_t = s, a_t = a] = \mathbb{E}_{\pi} [r_{t+1} + \gamma \, Q^\pi(s_{t+1}, a_{t+1})  | s_t = s, a_t = a]$$
 </div>
 
 
@@ -65,7 +65,7 @@ $$\pi^* = \text{argmax}_{\pi} \; p(s_0) \, \sum_{t=0}^\infty \gamma^t \, p(s_{t+
 </div>
 
 <div>
-$$V^*(s_t) = \max_a \sum_{s'} p(s' | s_t, a) \, (r(s_t, a, s')+ \gamma \, V^*(s'))$$
+$$V^*(s) = \max_a \sum_{s'} p(s' | s, a) \, (r(s_t, a, s')+ \gamma \, V^*(s'))$$
 </div>
 
 The main advantage of model-free methods is their speed: they *cache* the future of the system into value functions. When having to take a decision at time $t$, we only need to look at the action with the highest Q-value in the state $s\_t$ and take it. If the Q-values are optimal, this is the optimal policy. Oppositely, model-based algorithms have to plan sequentially in the state-action space, which can be very long if the problem has a long temporal horizon.
