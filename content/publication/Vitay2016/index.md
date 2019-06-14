@@ -50,11 +50,11 @@ url_project = ""
 url_slides = ""
 url_video = ""
 url_poster = ""
-url_source = ""
+url_source = "https://github.com/ReScience-Archives/Vitay-2016"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-doi = "10.1038/nn.3405"
+doi = "10.5281/zenodo.159545"
 
 # Does this page contain LaTeX math? (true/false)
 math = false

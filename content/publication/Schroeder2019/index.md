@@ -1,6 +1,6 @@
 +++
 title = "Feature Map Transformation for Fusion of Multi-Sensor Object Detection Networks for Autonomous Driving"
-date = 2019-02-01
+date = 2019-04-24
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -18,7 +18,7 @@ authors = ["Enrico Schröder", "Sascha Braun", "Mirko Mählisch", "Julien Vitay"
 publication_types = ["1"]
 
 # Publication name and optional abbreviated version.
-publication = "In Proceedings of Computer Vision Conference (CVC), Las Vegas (Nevada)"
+publication = "In Arai K., Kapoor S. (eds) Advances in Computer Vision. CVC 2019. Advances in Intelligent Systems and Computing, vol 944. Springer, Cham. doi:10.1007 / 978-3-030-17798-0_12"
 publication_short = ""
 
 # Abstract and optional shortened version.
@@ -42,7 +42,7 @@ projects = ["deeplearning"]
 tags = []
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "pdf/Schroeder2019.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
@@ -54,7 +54,8 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# url_custom = [{name = "Custom Link", url = "http://example.org"}]
+# url_custom = [{name = "Online", url = ""}]
+doi = "10.1007/978-3-030-17798-0_12"
 
 # Does this page contain LaTeX math? (true/false)
 math = false
