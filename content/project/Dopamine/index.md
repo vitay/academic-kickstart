@@ -51,10 +51,3 @@ A striking feature of VTA cells is their response during classical (or Pavlovian
 What remains unclear is how VTA cells access information about the US, the CS and more importantly the time elapsed since CS onset. The goal of this research project is to investigate the mechanisms by which VTA is able to exhibit these properties, by looking at the afferent system to VTA. VTa indeed receives information from many brain areas, either directly as the rostromedial tegmental area (RMTg), the pedunculopontine nucleus (PPTN) or the nucleus accumbens (NAcc), or indirectly as the amygdala, the lateral habenula (LHb), the ventral pallidum (VP) or the ventromedial prefrontal cortex (vmPFC).
 
 <img style="width:80%; min-width:320px" src="/img/dopamine/dopamine.jpg" />
-
-
-### Publications
-
-Julien Vitay (2017). [On the role of dopamine in motivated behavior: a neuro-computational approach](../../publication/habilitation). Habilitation (TU Chemnitz).
-
-Julien Vitay, Fred H. Hamker (2014). [Timing and expectation of reward: a neuro-computational model of the afferents to the ventral tegmental area](../../publication/vitay2014). Front. Neurorobot. 8:4. doi:10.3389/fnbot.2014.00004.

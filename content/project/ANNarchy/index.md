@@ -133,9 +133,3 @@ plt.show()
 
 <img style="width:80%; min-width:320px" src="/img/annarchy/izhikevich.png" />
 
-
-### Publications
-
-Julien Vitay, Helge Ü. Dinkelbach, Fred H. Hamker (2015). [ANNarchy: a code generation approach to neural simulations on parallel hardware](../../publication/vitay2015/). Front. Neuroinform. 9:19. doi: 10.3389/fninf.2015.00019.
-
-Helge Ü. Dinkelbach, Julien Vitay, Fred H. Hamker (2012). [Comparison of GPU- and CPU-implementations of mean-firing rate neural networks on parallel hardware](../../publication/dinkelbach2012/). Network: Computation in Neural Systems 23(4). doi:10.3109/0954898X.2012.739292.

@@ -13,18 +13,26 @@ subtitle = "Courses taught at the TU Chemnitz"
 
 +++
 
-* **Machine Learning**
+* **Neurocomputing** (responsible)
+
+[https://www.tu-chemnitz.de/informatik/KI/edu/neurocomputing](https://www.tu-chemnitz.de/informatik/KI/edu/neurocoputing)
+
+* **Deep Reinforcement Learning** (responsible)
+
+[https://www.tu-chemnitz.de/informatik/KI/edu/deeprl](https://www.tu-chemnitz.de/informatik/KI/edu/deeprl)
+
+* **Machine Learning** (responsible until 2019)
 
 [https://www.tu-chemnitz.de/informatik/KI/edu/ml](https://www.tu-chemnitz.de/informatik/KI/edu/ml)
 
-* **Computer Vision**
+* **Computer Vision** (responsible until 2019)
 
 [https://www.tu-chemnitz.de/informatik/KI/edu/biver](https://www.tu-chemnitz.de/informatik/KI/edu/biver)
 
-* **Introduction to AI**
+* **Introduction to AI** (exercises)
 
 [https://www.tu-chemnitz.de/informatik/KI/edu/ki](https://www.tu-chemnitz.de/informatik/KI/edu/ki)
 
-* **Proseminar AI**
+* **Proseminar AI** (responsible)
 
 [https://www.tu-chemnitz.de/informatik/KI/edu/prosem](https://www.tu-chemnitz.de/informatik/KI/edu/prosem)

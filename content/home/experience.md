@@ -42,7 +42,7 @@ date_format = "Jan 2006"
   date_start = "2006-07-01"
   date_end = "2011-02-28"
   description = """
-  Postdoc at the Institute for Psychology, Westfälische Wilhelms-Universität Münster.
+  Postdoc at the Institute for Psychology, Westfälische Wilhelms-Universität Münster, lab of Markus Lappe, supervisor Fred Hamker.
 
   Research topics:
 
@@ -53,30 +53,17 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "PhD student"
-  company = "Inria Lorraine"
+  company = "Inria Lorraine and Université Henri-Poincaré Nancy-I"
   company_url = "https://www.inria.fr"
   location = "Nancy (France)"
   date_start = "2002-10-01"
   date_end = "2006-06-30"
   description = """
-  PhD student at the University Henri-Poincaré Nancy-I and Inria Lorraine (LORIA).
-
-  Research topic:
+  PhD student at the University Henri-Poincaré Nancy-I and Inria Lorraine (LORIA), supervisors: Frédéric Alexandre and Nicolas Rougier.
 
   * Emergence of sensorimotor functions on a numerical distributed neural substrate.
-  """
-
-[[experience]]
-  title = "Teaching assistant"
-  company = "Université Henri-Poincaré Nancy-I, ESIAL"
-  company_url = "https://www.univ-lorraine.fr"
-  location = "Nancy (France)"
-  date_start = "2002-10-01"
-  date_end = "2006-06-30"
-  description = """
+  
   Teaching assistant at the University Henri-Poincaré Nancy-I and ESIAL engineering school.
-
-  Teaching topics:
 
   * Java
   * Computer architecture

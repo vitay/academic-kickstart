@@ -83,11 +83,3 @@ The idea of the work done by Saransh Vora during his Master thesis in 2018 at th
 
 {{< youtube dupgWkoA78c >}}
 
-
-### Publications
-
-Enrico Schröder, Mirko Mählisch, Julien Vitay, Fred H. Hamker (2018). [Fusion of Camera and Lidar Data for Object Detection using Neural Networks](../../publication/schroeder2018). In Proceedings of 12. Workshop Fahrerassistenzsysteme und automatisiertes Fahren FAS 2018, 26-28.09.2018, Walting im Altmühltal (Germany). pp138-146. Darmstadt:Uni-DAS e.V..
-
-Enrico Schröder, Sascha Braun, Mirko Mählisch, Julien Vitay, Fred H. Hamker (2019). [Feature Map Transformation for Fusion of Multi-Sensor Object Detection Networks for Autonomous Driving](../../publication/schroeder2019). In Computer Vision Conference (CVC), Las Vegas (Nevada).
-
-Valentin Forch, Julien Vitay, Fred H. Hamker (2019). [Recurrent Spatial Attention for Facial Emotion Recognition](../../publication/forch2019). In Proceedings of Workshop Localize IT, Chemnitz Linux-Tage, Chemnitz (Germany).
