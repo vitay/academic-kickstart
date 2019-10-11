@@ -1,6 +1,6 @@
 +++
 title = "Dopaminergic system"
-date = 2019
+date = 2016
 draft = false
 
 # Tags: can be used for filtering projects.
@@ -8,7 +8,7 @@ draft = false
 tags = ['computational-neuroscience']
 
 # Project summary to display on homepage.
-summary = "Modeling the dopaminergic system (VTA, SNc), its afferences and its influence on the basal ganglia, prefrontal cortex and hippocampus."
+summary = "Modeling the dopaminergic system (VTA, SNc), its afferent system and its influence on the basal ganglia, prefrontal cortex and hippocampus."
 
 # Slides (optional).
 #   Associate this page with Markdown slides.

@@ -3,7 +3,7 @@
 widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 50  # Order that this section will appear.
+weight = 40  # Order that this section will appear.
 
 title = "Research"
 subtitle = "A selection of research topics"
@@ -53,7 +53,7 @@ subtitle = "A selection of research topics"
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  # color = "navy"
+  # color = "white"
 
   # Background gradient.
   # gradient_start = "DeepSkyBlue"

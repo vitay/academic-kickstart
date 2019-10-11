@@ -1,6 +1,6 @@
 +++
 title = "Deep Learning"
-date = 2019
+date = 2017
 draft = false
 
 # Tags: can be used for filtering projects.

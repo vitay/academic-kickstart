@@ -88,7 +88,7 @@ user_groups = ["Researchers"]
 
 +++
 
-I am researcher and lecturer at the [TU Chemnitz](http://www.tu-chemnitz.de/), in the lab of [Artificial Intelligence](http://www.tu-chemnitz.de/informatik/KI/) of the Faculty of Computer Science.
+I am researcher and lecturer at the [TU Chemnitz](http://www.tu-chemnitz.de/), in the lab of [Artificial Intelligence](http://www.tu-chemnitz.de/informatik/KI/) of the Department of Computer Science.
 
 I was previously postdoc in the [Psychology Department](http://www.uni-muenster.de/Psychologie/) of the University of Münster (Germany), under the supervision of Prof. Dr. Fred Hamker and a PhD student at [Inria](http://www.inria.fr/) Nancy (France), in the Cortex lab headed by Dr. Frédéric Alexandre.
 

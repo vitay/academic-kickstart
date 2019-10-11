@@ -59,7 +59,7 @@ Strasse der Nationen 62<br>
 D-09107 Chemnitz, Germany"""
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
-office_hours = """Office hours on Mondays 13:00 to 14:00 (during the lectures period)"""
+office_hours = """Office hours on Tuesdays 13:00 to 14:00 (during the lectures period)"""
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
 appointment_url = ""
@@ -144,7 +144,7 @@ sharing = true
   #   3: Card
   #   4: Citation (publications only)
   post_view = 1
-  publication_view = 1
+  publication_view = 4
   talk_view = 1
 
 # Search.
