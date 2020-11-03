@@ -5,7 +5,7 @@
 
 widget = "custom"  # Do not modify this line!
 active = true  # Activate this widget? true/false
-weight = 50  # Order that this section will appear.
+weight = 75  # Order that this section will appear.
 
 # Note: a full width section format can be enabled by commenting out the `title` and `subtitle` with a `#`.
 title = "Teaching"
