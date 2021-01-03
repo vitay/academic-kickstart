@@ -17,7 +17,7 @@ publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: "2020 Fourth IEEE International Conference on Robotic Computing (IRC)"
-publication_short: "IRC"
+publication_short: "International Conference on Robotic Computing (IRC)"
 
 abstract: "In this paper we propose to use a feature map transformation network for the task of monocular 3D object detection. Given a monocular camera image, the transformation network encodes features of the scene in an abstract, perspective-invariant latent representation. This latent representation can then be decoded into a bird's-eye view representation to estimate objects' position and rotation in 3D space. In our experiments on the Kitti object detection dataset we show that our model is able to learn to estimate objects' 3D position from a monocular camera image alone without having any explicit geometric model or other prior information on how to perform the transformation. While performing slightly worse than networks which are purpose-built for this task, our approach allows feeding the same bird's-eye view object detection network with input data from different sensor modalities. This can increase redundancy in a safety-critical environment. We present additional experiments to gain insight into the properties of the learned perspective-invariant abstract scene representation."
 
