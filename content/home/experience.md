@@ -25,9 +25,9 @@ date_format = "Jan 2006"
   date_start = "2011-03-01"
   date_end = ""
   description = """
-  Tenure position in the lab of Artificial Intelligence, Department of Computer Science.
+  Tenured position in the lab of Artificial Intelligence, Department of Computer Science.
 
-  Responsibilities include:
+  Responsabilities include:
 
   * Teaching: Machine Learning, Computer Vision, Introduction to AI, Proseminar.
   * Research: computational neuroscience, machine learning.
@@ -44,10 +44,7 @@ date_format = "Jan 2006"
   description = """
   Postdoc at the Institute for Psychology, Westfälische Wilhelms-Universität Münster, lab of Markus Lappe, supervisor Fred Hamker.
 
-  Research topics:
-
-  * Basal Ganglia modeling.
-  * Reinforcement learning.
+  Research topics: Basal Ganglia modeling, Reinforcement learning.
 
   """
 
@@ -61,13 +58,8 @@ date_format = "Jan 2006"
   description = """
   PhD student at the University Henri-Poincaré Nancy-I and Inria Lorraine (LORIA), supervisors: Frédéric Alexandre and Nicolas Rougier.
 
-  * Emergence of sensorimotor functions on a numerical distributed neural substrate.
+  Thesis: Emergence of sensorimotor functions on a numerical distributed neural substrate.
   
-  Teaching assistant at the University Henri-Poincaré Nancy-I and ESIAL engineering school.
-
-  * Java
-  * Computer architecture
-  * Project management
-  * Artificial Intelligence
+  Teaching assistant at the University Henri-Poincaré Nancy-I and ESIAL engineering school (Java, Computer architecture, Project management, Artificial Intelligence).
   """
 +++
