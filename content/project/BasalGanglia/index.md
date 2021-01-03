@@ -1,6 +1,6 @@
 +++
 title = "Basal Ganglia"
-date = 2018
+date = 2020-11-01
 draft = false
 
 # Tags: can be used for filtering projects.
@@ -41,7 +41,9 @@ url_poster = ""
 
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = ""
+  focal_point = "Smart"
+
+  preview_only = true
 +++
 
 The Basal Ganglia (BG) are a set of nuclei located in the basal forebrain, receiving inputs mostly from the cerebral cortex (especially the frontal lobe) and projecting on various motor centers, as well as back to the cortex through the thalamus, forming a closed-loop. 

@@ -1,6 +1,6 @@
 +++
 title = "ANNarchy"
-date = 2019
+date = 2020-12-01
 draft = false
 
 # Tags: can be used for filtering projects.
@@ -42,6 +42,8 @@ url_poster = ""
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Center"
+
+  preview_only = true
 +++
 
 Neuro-computational models are different from classical neural networks (deep learning) in many aspects:

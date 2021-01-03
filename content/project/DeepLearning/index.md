@@ -1,6 +1,6 @@
 +++
 title = "Deep Learning"
-date = 2017
+date = 2020-10-20
 draft = false
 
 # Tags: can be used for filtering projects.
@@ -42,6 +42,8 @@ url_poster = ""
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Smart"
+
+  preview_only = true
 +++
 
 

@@ -3,7 +3,7 @@ title = "Introduction to ANNarchy"
 authors = ["Julien Vitay"]
 
 [slides]
-theme = "black"
+theme = "white"
 highlight_style = "github"
 +++
 

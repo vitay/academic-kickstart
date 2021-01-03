@@ -1,6 +1,6 @@
 +++
 title = "Dopaminergic system"
-date = 2016
+date = 2020-09-01
 draft = false
 
 # Tags: can be used for filtering projects.
@@ -42,6 +42,8 @@ url_poster = ""
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Center"
+
+  preview_only = true
 +++
 
 The dopaminergic system is composed of the *ventral tegmental area* (VTA) and the *substantia nigra pars compacta* (SNc). The neurotransmitter **dopamine** (DA) released by neurons in these two small areas exerts a strong influence on neural excitability and plasticity in many brain areas: mostly the basal ganglia (BG), but also the prefrontal cortex, the hippocampus or the amygdala.

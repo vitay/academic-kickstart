@@ -1,6 +1,6 @@
 +++
 title = "Reservoir Computing"
-date = 2013
+date = 2020-06-01
 draft = false
 
 # Tags: can be used for filtering projects.
@@ -42,11 +42,13 @@ url_poster = ""
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = ""
+
+  preview_only = true
 +++
 
 The field of **reservoir computing**, covering Echo-State Networks (ESN; Jaeger, 2000) and Liquid State Machines (Maas, 2001), studies the dynamical properties of recurrent neural networks. Depending on the strength of the recurrent connections, the reservoirs can exhibit either deterministic or chaotic trajectories following a stimulation.
 
-![](result.png)
+<img style="width:80%; min-width:320px" src="result.png" />
 
 These trajectories can serve as a complex temporal basis to represent events. In their early formulation, reservoirs were fixed and read-out neurons used this basis to mimic specific target signals using supervised learning.
 

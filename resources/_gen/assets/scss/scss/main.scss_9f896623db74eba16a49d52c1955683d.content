@@ -9241,3 +9241,15 @@ div.mermaid {
  **************************************************/
 html[dir="rtl"] body {
   text-align: right; }
+
+html {
+  text-align: justify; }
+
+body {
+  text-align: justify; }
+
+.article-container {
+  text-align: justify;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1020px; }

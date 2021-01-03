@@ -1,6 +1,6 @@
 +++
-title = "Deep Reinforcement Learning"
-date = 2014
+title = "Reinforcement Learning"
+date = 2020-07-01
 draft = false
 
 # Tags: can be used for filtering projects.
@@ -42,10 +42,14 @@ url_poster = ""
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = ""
+
+  preview_only = true
 +++
 
 
 Deep reinforcement learning (deep RL) is the integration of deep learning methods, classically used in supervised or unsupervised learning contexts, with reinforcement learning (RL), a well-studied adaptive control method used in problems with delayed and partial feedback.
+
+<img style="width:100%; min-width:320px" src="featured.png" />
 
 Home-made textbook on deep RL:
 

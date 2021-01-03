@@ -1,6 +1,6 @@
 +++
 title = "Hippocampus"
-date = 2015
+date = 2020-08-01
 draft = false
 
 # Tags: can be used for filtering projects.
@@ -42,6 +42,8 @@ url_poster = ""
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = ""
+
+  preview_only = true
 +++
 
 The hippocampus is a key structure for episodic memory and spatial navigation. A fundamental step in hippocampus research was the discovery of **place cells**, which fire whenever an animal traverses a certain location known as the place field (O'Keefe and Nadel, 1978). At rest, place cells exhibit brief periods of fast oscillations termed sharp wave-ripples. During these events, place cell activity shows sequential patterns called forward replay and reverse replay: time-compressed, and sometimes time-reversed, reproductions of previously experienced sequences. Spatial experiences stored in the hippocampus can therefore be recalled at will during behavior.
