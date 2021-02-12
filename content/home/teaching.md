@@ -17,14 +17,9 @@ subtitle = "Courses taught at the TU Chemnitz"
 
 [https://www.tu-chemnitz.de/informatik/KI/edu/neurocomputing](https://www.tu-chemnitz.de/informatik/KI/edu/neurocomputing)
 
-[Online lecture notes](https://julien-vitay.net/lecturenotes-neurocomputing)
-
-
 * **Deep Reinforcement Learning** (responsible)
 
 [https://www.tu-chemnitz.de/informatik/KI/edu/deeprl](https://www.tu-chemnitz.de/informatik/KI/edu/deeprl)
-
-[Online lecture notes](https://julien-vitay.net/lecturenotes-deeprl)
 
 * **Introduction to AI** (exercises)
 
